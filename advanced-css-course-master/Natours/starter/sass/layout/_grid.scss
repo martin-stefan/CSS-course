@@ -1,6 +1,5 @@
 .row {
   max-width: $grid-width;
-  background-color: #eee;
   margin: 0 auto;
 
   &:not(:last-child) {
@@ -13,7 +12,6 @@
   // $ searches for any class that ends with col
   // * searches for any class that contains col
   [class^="col-"] {
-    background-color: orangered;
     float: left;
 
     &:not(:last-child) {
