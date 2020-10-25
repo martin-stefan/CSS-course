@@ -51,6 +51,21 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh; }
 
+.logo {
+  height: 3.25rem; }
+
+.search__icon {
+  height: 2rem;
+  width: 2rem; }
+
+.nav__box--icon {
+  height: 2.25rem;
+  width: 2.25rem; }
+
+.nav__user--img {
+  height: 3.75rem;
+  border-radius: 50%; }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
