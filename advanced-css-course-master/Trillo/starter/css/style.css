@@ -145,8 +145,10 @@ body {
     width: 3px;
     background-color: var(--color-primary);
     transform: scaleY(0);
-    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1); }
-  .sideNav__item:hover::before {
+    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1), background-color 0.1s; }
+  .sideNav__item:active::before {
+    background-color: var(--color-primary-light); }
+  .sideNav__item:hover::before, .sideNav__item--active::before {
     transform: scaleY(1);
     width: 100%; }
   .sideNav__link:link, .sideNav__link:visited {
@@ -155,6 +157,8 @@ body {
     text-decoration: none;
     display: none;
     padding: 1.5rem 3rem;
+    position: relative;
+    z-index: 10;
     display: flex;
     align-items: center; }
   .sideNav__icon {
