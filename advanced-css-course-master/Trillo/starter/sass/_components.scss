@@ -194,3 +194,42 @@
     display: block;
   }
 }
+
+
+.overview {
+
+  display: flex;
+
+  &__heading {
+
+  }
+
+  &__stars {
+    // means that this flex item should grow and occupy all available span
+    // flex: 1;
+    margin-right: auto;
+  }
+
+  &__icon-stars,
+  &__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary);
+  }
+
+  &__location {
+    
+  }
+
+  &__rating {
+
+  }
+
+  &__rating-count {
+
+  }
+
+  &__rating-average {
+
+  }
+}
