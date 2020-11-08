@@ -273,8 +273,7 @@ body {
 
 .hotelView {
   background-color: #fff;
-  flex: 1;
-  height: 80rem; }
+  flex: 1; }
 
 .details {
   display: flex;
@@ -287,7 +286,8 @@ body {
   box-shadow: 0 2rem 5rem rgba(126, 94, 94, 0.06);
   padding: 3rem;
   flex: 0 0 60%;
-  margin-right: 4.5rem; }
+  margin-right: 4.5rem;
+  font-size: 1.4rem; }
 
 .user-reviews {
   background-color: green;
