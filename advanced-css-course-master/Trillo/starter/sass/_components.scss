@@ -263,7 +263,7 @@
 
 .btn-inline {
   border: none;
-  color: --var(--color-primary);
+  color: var(--color-primary);
   font-size: inherit;
   border-bottom: 1px solid currentColor;
   padding-bottom: 2px;
@@ -272,9 +272,19 @@
   cursor: pointer;
   transition: all .2s;
 
+  & span {
+    margin-left: 3px;
+    transition: margin-left .2s;
+  }
+
   &:hover {
     color: var(--color-grey-dark-1);
+
+    span {
+      margin-left: 8px;
+    }
   }
+
 
   &:focus {
     outline: none;
@@ -382,9 +392,12 @@
   box-shadow: var(--shadow-light);
   padding: 3rem;
   margin-bottom: 3.5rem;
+  position: relative;
+  overflow: hidden;
 
   &__text {
-
+    z-index: 10;
+    position: relative;
   }
 
   &__user {
@@ -417,6 +430,7 @@
     color: var(--color-grey-dark-3);
   }
 
+
   &__rating {
     color: var(--color-primary);
     font-size: 2.2rem;
@@ -425,5 +439,13 @@
 
   &::before {
     content: "\201C";
+    position: absolute;
+    top: -3rem;
+    left: -1rem;
+    line-height: 1;
+    font-size: 20rem;
+    color: var(--color-grey-light-2);
+    font-family: sans-serif;
+    z-index: 1;
   }
 }
